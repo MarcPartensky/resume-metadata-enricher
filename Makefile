@@ -1,5 +1,5 @@
 run:
-	poetry run python .
+	poetry run python resume-metadata-enricher
 up: build
 	docker compose up --force-recreate --rm
 push: build
