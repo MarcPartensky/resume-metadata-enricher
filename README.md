@@ -2,7 +2,9 @@
 Enrich your resume with metadata to bypass the bots
 
 # Demo
-![Demo](https://i.imgur.com/QIkz5fb.png)
+<!-- ![Demo](https://i.imgur.com/QIkz5fb.png) -->
+![Demo](./terminalizer/resume-data-enricher.gif)
+
 
 # Requirements
 - A PDF file

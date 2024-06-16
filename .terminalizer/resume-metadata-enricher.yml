@@ -125,7 +125,7 @@ records:
     content: "\r\n\e[?2004l\rpoetry run python resume-metadata-enricher\r\n"
   - delay: 581
     content: "\e[1mEnabling nextcloud support \e[0m\r\n"
-  - delay: 1000
+  - delay: 1500
     content: "Added to nextcloud:\r\n- Docker\r\n"
   - delay: 500
     content: "- Python\r\n"
