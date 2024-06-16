@@ -15,7 +15,7 @@ from deck.models import Board, Card, Stack, Label
 
 # optional
 
-TECH_FILE = os.environ["TECH_FILE"]
+METADATA_FILE = os.environ["METADATA_FILE"]
 RESUME_FOLDER = os.environ["RESUME_FOLDER"]
 
 BOARD_ID = int(os.environ["NEXTCLOUD_BOARD_ID"])
@@ -30,7 +30,7 @@ nc = NextCloudDeckAPI(
 def hydrate() -> dict:
     """Hydrate the data from nextcloud and yaml file and return it"""
     # Read
-    with open(TECH_FILE, "r") as stream:
+    with open(METADATA_FILE, "r") as stream:
         tech_data = load(stream)
     techs = set(tech_data["technologies"])
 
@@ -51,7 +51,7 @@ def hydrate() -> dict:
     print("\n")
 
     tech_data["technologies"] = list(sorted(list(techs)))
-    with open(TECH_FILE, "w") as stream:
+    with open(METADATA_FILE, "w") as stream:
         stream.write(dump(tech_data, allow_unicode=True))
 
     return tech_data
