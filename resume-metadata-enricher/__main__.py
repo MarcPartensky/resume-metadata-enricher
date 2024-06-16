@@ -43,8 +43,8 @@ def is_nextcloud_enabled():
 
 
 
-def hydrate_nextcloud(techs: set, nextcloud: dict):
-    """Hydrate set of technologies with nextcloud"""
+def hydrate_nextcloud(keywords: set, nextcloud: dict):
+    """Hydrate set of keywords with nextcloud"""
     nc = nextcloud["nc"]
     board_id = nextcloud["board_id"]
     stack_id = nextcloud["stack_id"]
@@ -52,35 +52,35 @@ def hydrate_nextcloud(techs: set, nextcloud: dict):
     cards = nc.get_cards_from_stack(board_id=board_id, stack_id=stack_id)
     card: Card
 
-    nextcloud_techs = set()
+    nextcloud_keywords = set()
     for card in cards:
-        nextcloud_techs.add(card.title)
-        techs.add(card.title)
+        nextcloud_keywords.add(card.title)
+        keywords.add(card.title)
 
     # Write
     print("Added to nextcloud:")
-    for tech in techs:
-        if tech not in nextcloud_techs:
-            print(f"- {tech}")
-            nc.create_card(board_id=board_id, stack_id=stack_id, title=tech)
+    for keyword in keywords:
+        if keyword not in nextcloud_keywords:
+            print(f"- {keyword}")
+            nc.create_card(board_id=board_id, stack_id=stack_id, title=keyword)
     print("\n")
-    return techs
+    return keywords
 
 def hydrate(nextcloud: dict) -> dict:
     """Hydrate the data from nextcloud and yaml file and return it"""
     # Read
     with open(METADATA_FILE, "r") as stream:
-        tech_data = load(stream)
-    techs = set(tech_data["technologies"])
+        metadata = load(stream)
+    keywords = set(metadata["keywords"])
 
     if nextcloud:
-        techs = hydrate_nextcloud(techs, nextcloud)
+        techs = hydrate_nextcloud(keywords, nextcloud)
 
-    tech_data["technologies"] = list(sorted(list(techs)))
+    metadata["keywords"] = list(sorted(list(keywords)))
     with open(METADATA_FILE, "w") as stream:
-        stream.write(dump(tech_data, allow_unicode=True))
+        stream.write(dump(metadata, allow_unicode=True))
 
-    return tech_data
+    return metadata
 
 def build_metadata(tech_data: dict) -> dict:
     """Build the metadata from the tech_data of nextcoud and yml file"""
@@ -97,7 +97,6 @@ def build_metadata(tech_data: dict) -> dict:
 
 def update_resumes(metadata: dict):
     """Update resumes metadata"""
-    # techs = metadata["technologies"]
     folder = os.listdir(RESUME_FOLDER)
     resumes = []
 
