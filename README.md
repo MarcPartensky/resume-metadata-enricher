@@ -1,6 +1,12 @@
 # Resume Metadata Enricher
 Enrich your resume with metadata to bypass the bots
 
+# Requirements
+- Nextcloud Instance with user account and knowledge of board and stack id
+- A PDF file
+- Python3.11
+
+
 # How to use
 ```sh
 # clone the project
