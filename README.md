@@ -15,6 +15,9 @@ Enrich your resume with metadata to bypass the bots
 # clone the project
 git clone https://github.com/MarcPartensky/resume-metadata-enricher
 cd resume-metadata-enricher
+# Create a folder and put your resumes pdf in it
+mkdir resumes
+echo Put your pdf in ./resumes
 # Create an .env file with .env.example
 mv .env.example .env
 # Create a metadata.yml file with metadata.example.yml
