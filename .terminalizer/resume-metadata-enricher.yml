@@ -163,5 +163,5 @@ records:
     content: "\r\n\r\nfile: \e[1m cv marc partensky devops en 16-06-2024.pdf \e[0m\r\n{'/Author': 'Marc Partensky',\r\n '/CreationDate': 'D:20240615173554Z',\r\n '/Creator': 'marcpartensky (https://github.com/marcpartensky)',\r\n '/Keywords': 'Bash,C#,C++,CSS,DevOps,Django,Docker,HTML5,Java,Javascript,MySQL,Nest,Node.js,PHP,Perl,PostgreSQL,Python,R,React',\r\n '/ModDate': 'D:20240615173554Z',\r\n '/Producer': 'marcpartensky (https://github.com/marcpartensky)'}\r\n"
   - delay: 500
     content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h[marc@arch resume-metadata-enricher]$ "
-  - delay: 5000
+  - delay: 10000
     content: "\e[?2004l\r\r\nlogout\r\n"
