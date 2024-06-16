@@ -30,7 +30,7 @@ python resume-metadata-enricher
 
 # Environment variables
 ```bash
-TECH_FILE="./technologies.yml"
+TECH_FILE="./metadata.yml"
 RESUME_FOLDER="./resumes"
 ```
 
