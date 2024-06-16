@@ -130,8 +130,6 @@ def update_resume(new_metadata: dict, filepath: str):
         except Exception as e:
             print("Impossible to read metadata, keep going anyway")
             print(f"Exception: {e}")
-        finally:
-            print("\n")
 
         metadata.update(new_metadata)
         pprint(metadata)

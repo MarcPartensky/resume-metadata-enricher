@@ -40,3 +40,5 @@ NEXTCLOUD_PASSWORD="password
 NEXTCLOUD_BOARD_ID=1
 NEXTCLOUD_STACK_ID=2
 ```
+
+![Demo](https://i.imgur.com/QIkz5fb.png)
