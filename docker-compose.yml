@@ -1,0 +1,6 @@
+services:
+  autodownloader:
+    image: marcpartensky/resume-metadata-enricher
+    build: .
+    env_file:
+      - .env
