@@ -38,7 +38,7 @@ def is_nextcloud_enabled():
         error = f"To enable nextcloud you need to set:\n"
         for i,env_var in enumerate(env_vars):
             if not existing_vars[i]:
-                error += f"- {env_var}]\n"
+                error += f"- {env_var}\n"
         raise Exception(error)
 
 
