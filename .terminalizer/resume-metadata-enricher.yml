@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 235
+  cols: 112
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 59
+  rows: 28
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -111,29 +111,57 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 0
-    content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h$ "
-  - delay: 500
-    content: m
-  - delay: 100
-    content: a
-  - delay: 100
-    content: k
-  - delay: 100
+  - delay: 8
+    content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h[marc@arch resume-metadata-enricher]$ "
+  - delay: 200
+    content: p
+  - delay: 50
+    content: 'y'
+  - delay: 50
+    content: t
+  - delay: 50
+    content: h
+  - delay: 50
+    content: o
+  - delay: 50
+    content: n
+  - delay: 50
+    content: ' '
+  - delay: 80
+    content: r
+  - delay: 50
     content: e
-  - delay: 100
-    content: "\r\n\e[?2004l\rpoetry run python resume-metadata-enricher\r\n"
-  - delay: 581
+  - delay: 50
+    content: s
+  - delay: 50
+    content: u
+  - delay: 50
+    content: m
+  - delay: 50
+    content: e
+  - delay: 50
+    content: '-'
+  - delay: 300
+    content: metadata-enricher/
+  - delay: 500
+    content: "\r\n\e[?2004l\r"
+  - delay: 500
     content: "\e[1mEnabling nextcloud support \e[0m\r\n"
-  - delay: 1500
-    content: "Added to nextcloud:\r\n- Docker\r\n"
   - delay: 500
-    content: "- Python\r\n"
-  - delay: 500
+    content: "Added to nextcloud:\r\n- DevOps\r\n"
+  - delay: 700
     content: "- Javascript\r\n"
+  - delay: 700
+    content: "- Node.js\r\n"
+  - delay: 700
+    content: "- Python\r\n"
+  - delay: 700
+    content: "- Django\r\n"
+  - delay: 700
+    content: "- Docker\r\n"
+  - delay: 700
+    content: "\r\n\r\nfile: \e[1m cv marc partensky devops en 16-06-2024.pdf \e[0m\r\n{'/Author': 'Marc Partensky',\r\n '/CreationDate': 'D:20240615173554Z',\r\n '/Creator': 'marcpartensky (https://github.com/marcpartensky)',\r\n '/Keywords': 'Bash,C#,C++,CSS,DevOps,Django,Docker,HTML5,Java,Javascript,MySQL,Nest,Node.js,PHP,Perl,PostgreSQL,Python,R,React',\r\n '/ModDate': 'D:20240615173554Z',\r\n '/Producer': 'marcpartensky (https://github.com/marcpartensky)'}\r\n"
   - delay: 500
-    content: "\r\n\r\n"
-  - delay: 1500
-    content: "file: \e[1m cv marc partensky devops en 16-06-2024.pdf \e[0m\r\n{'/Author': 'Marc Partensky',\r\n '/CreationDate': 'D:20240615173554Z',\r\n '/Creator': 'marcpartensky (https://github.com/marcpartensky)',\r\n '/Keywords': 'API REST,ASP.NET,ASP.NET Core,ASP.NET MVC,ASP.NET '\r\n              'Razor,AWS,Active Directory,Administration réseau,Administration '\r\n              'système,Administration système Linux,Agile,Ajax,Akamai,Amazon '\r\n              'Elastic Compute Cloud,Amazon S3,Amazon Web '\r\n              'Services,Android,AngularJS,Ansible,Ant,Apache,Apache '\r\n              'Kafka,Apple,Apprentissage automatique,Arch '\r\n              'Linux,Artifacts,Artifical '\r\n              'Intelligence,Assembleur,Automation,Automatisation des '\r\n              'tests,Azure CLI,Azure DevOps,BS4,Bamboo,Base de '\r\n              'données,Bash,Basic,Beautiful Soup 4,Big '\r\n              'Data,Blockchain,Bootstrap,Bourne Shell,Business '\r\n              'Intelligence,C#,C++,CI/CD,CMS,CRM,CSS,Caddy,CakePHP,Cas de '\r\n              'test,Cassandra,Cloud '\r\n              'Computing,Cloudflare,CoffeeScript,Confluence,Continous '\r\n              'Delivery,Continuous '\r\n              'Integration,Cordova,CouchDB,Cybersécurité,DOM,Data '\r\n              'Analytics,Data Processing,Dataiku DSS,Datascience,Debian,Deep '\r\n              'Learning,Deep learning,Design '\r\n              'Pattern,DevOps,Django,Docker,Docker '\r\n              'Swarm,Dockerfile,Drupal,Développement front-end,Développement '\r\n              'web,Développement web back-end,E-commerce,EC2,ELK,ERP,Edge '\r\n              'Router,ElasticSearch,Ember JS,Extraction de contenu '\r\n              'web,FastAPI,Feuilles de style en cascade '\r\n              '(CSS),Finance,Firebase,Flask,Flutter,Frameworks,FreeBSD,Full '\r\n              'Stack,GCP,GNU/Linux,Gestion de la relation client '\r\n              '(CRM),Git,GitLab,GitLab Runner,GitOps,Github,Go,Google,Google '\r\n              'Cloud '\r\n              'Plateform,GoogleCloud,Groovy,HTML5,Haskell,Heroku,IaC,IaaS,Infrastructure,Intelligence '\r\n              'artificielle,Internet of Things,Intégration continue et '\r\n              'livraison continue '\r\n              '(CI/CD),IoT,JEE,JIRA,JSON,Java,JavaScript,Javascript,Jenkins,Jira,Joomla,K3s,K8s,Kafka,Kanban,Keras,Keycloak,Kotlin,Kubernetes,LAMP,LDAP,Laravel,Linux,Logiciel,Logiciel '\r\n              'ERP,Low Code,Lua,MEAN,MERN,ML,MS SQL,MVC,Machine '\r\n              'Learning,Matlab,Maven,MeteorJS,Microsoft,Minio,Modèle '\r\n              'OSI,Mongo,MongoDB,Montage vidéo,MySQL,Méthodes '\r\n              'agiles,NLP,Neovim,NestJS,Network,Networking,Nginx,Nixos,Nmap,No '\r\n              'Code,Node.js,Nodejs,OIDC,ORM,Oauth2,Objective-C,OpenGL,OpenID,Oracle,Orchestration,PHP,PaaS,Perl,PiHole,Pipelines,PostgreSQL,Powershell,Prisma,Prometheus,Proxmox,PyTorch,Python,Python '\r\n              '(langage de programmation),QT,QT '\r\n              'Frameworks,R,RBAC,RHEL,RabbitMQ,Rails,React,React '\r\n              'Native,React.js,ReactJS,Reconnaissance de formes,Red Hat '\r\n              'Enterprise Linux (RHEL),Redis,Rest API,Reverse '\r\n              'Proxy,Ruby,Rust,Réseau de neurones récurrents,Réseau '\r\n              'informatique,Réseaux de neurones artificiels,Réseaux de '\r\n              'neurones '\r\n              'convolutifs,S3,SDK,SOAP,SQL,SQLite,SSH,SVM,SVN,Saas,Sass,Scala,Scrum,Secure '\r\n              'Shell,Selenium,Serverless,Services web '\r\n              'RESTful,Sh,Slack,Snyk,Software,Spark,Spring,Spring Boot,Spring '\r\n              'Security,Sso,SvelteJS,Swift,Swign,Symfony,TDD,Tableau,Tableau '\r\n              'Desktop,Tableau Server,Telecom,TensorFlow,Terraform,Test Driven '\r\n              'Development,Tomcat,Tooling,Traefik,Twitter '\r\n              'Bootstrap,TypeScript,UML,UX/UI,VMWare,VPC,Virtual '\r\n              'Machine,Visual Studio Code,VueJS,Web,Web server,Web '\r\n              'sémantique,Webpack,WordPress,Xamarin,Zsh,iOS,jMeter,jQuery,jUnit',\r\n '/ModDate': 'D:20240615173554Z',\r\n '/Producer': 'marcpartensky (https://github.com/marcpartensky)'}\r\n"
-  - delay: 3000
-    content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h$ "
+    content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h[marc@arch resume-metadata-enricher]$ "
+  - delay: 5000
+    content: "\e[?2004l\r\r\nlogout\r\n"
