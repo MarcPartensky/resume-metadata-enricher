@@ -1,10 +1,12 @@
 # Resume Metadata Enricher
 Enrich your resume with metadata to bypass the bots
 
+# Demo
+![Demo](https://i.imgur.com/QIkz5fb.png)
+
 # Requirements
 - A PDF file
 - Python3.11
-
 
 # How to use
 ```sh
@@ -41,4 +43,3 @@ NEXTCLOUD_BOARD_ID=1
 NEXTCLOUD_STACK_ID=2
 ```
 
-![Demo](https://i.imgur.com/QIkz5fb.png)
