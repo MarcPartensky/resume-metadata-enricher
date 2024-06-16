@@ -30,7 +30,7 @@ RESUME_FOLDER="./resumes"
 # Nextcloud support
 You can enable nextcloud support to load the technologies from a stack of nextcloud deck.
 So if you have a new idea of technologie you can just add it on the go for next time.
-```bash
+```
 NEXTCLOUD_URL="https://nextcloud.example.com"
 NEXTCLOUD_USER="user"
 NEXTCLOUD_PASSWORD="password
