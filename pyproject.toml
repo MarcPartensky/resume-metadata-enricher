@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "resume-metadata-enricher"
+version = "0.1.0"
+description = "Enrich your resume with metadata to bypass the bots"
+authors = ["Marc Partensky <marc.partensky@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+PyPDF2 = "^3.0.1"
+PyYAML = "^6.0.1"
+nextcloud-deck = "^0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
