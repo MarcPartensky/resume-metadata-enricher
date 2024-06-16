@@ -2,7 +2,6 @@
 Enrich your resume with metadata to bypass the bots
 
 # Requirements
-- Nextcloud Instance with user account and knowledge of board and stack id
 - A PDF file
 - Python3.11
 
@@ -24,11 +23,17 @@ python resume-metadata-enricher
 
 # Environment variables
 ```sh
+TECH_FILE="./technologies.yml"
+RESUME_FOLDER="./resumes"
+```
+
+# Nextcloud support
+You can enable nextcloud support to load the technologies from a stack of nextcloud deck.
+So if you have a new idea of technologie you can just add it on the go for next time.
+```sh
 NEXTCLOUD_URL="https://nextcloud.example.com"
 NEXTCLOUD_USER="user"
 NEXTCLOUD_PASSWORD="password
 NEXTCLOUD_BOARD_ID=1
 NEXTCLOUD_STACK_ID=2
-TECH_FILE="./technologies.yml"
-RESUME_FOLDER="./resumes"
 ```
