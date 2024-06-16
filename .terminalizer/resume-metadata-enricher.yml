@@ -111,9 +111,9 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 8
-    content: "\e]0;marc@arch:~/git/resume-metadata-enricher\a\e[?2004h$ "
-  - delay: 200
+  - delay: 0
+    content: "[marc@arch ~/git/resume-metadata-enricher] $ "
+  - delay: 300
     content: p
   - delay: 50
     content: 'y'
