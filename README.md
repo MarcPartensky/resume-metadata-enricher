@@ -27,7 +27,7 @@ TECH_FILE="./technologies.yml"
 RESUME_FOLDER="./resumes"
 ```
 
-# Optional Nextcloud support
+# Optional Nextcloud Deck support
 You can enable nextcloud support to load the technologies from a stack of nextcloud deck.
 So if you have a new idea of technologie you can just add it on the go for next time.
 
